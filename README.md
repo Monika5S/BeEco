@@ -1,12 +1,12 @@
 <h1>BeEco</h1>
-<br>
+
 <h3>“BeEco” is a software based on the idea of preventing the waste of potentially useful recyclable
 materials by helping to keep them out of landfills and incinerators. It is a web-based platform
 which helps users to identify recyclable waste and they can find the recycling points.</h3>
 
 <br><br>
 
-<h2>PROBLEM IDENTIFICATION</h2><br>
+<h2>PROBLEM IDENTIFICATION</h2>
 
 <h3>Improper disposal of waste has a huge environmental impact and leads to serious problems.
 When recyclable items are thrown into the garbage instead of recycling, they end up in landfills
