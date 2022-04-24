@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detect Object</title>
+       <link rel="stylesheet" href="/style.css">
+
+        <link rel="stylesheet" href="/custom_vision/results.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="/custom_vision/classification_result.js"></script>
+        <script src="/custom_vision/classify.js"></script>
+    </head>
+
+    <header>
+        <nav class="navbar">
+              <ul class="nav-items">
+                <li class="nav-item"><a href="/index.html" >Home</a></li>
+                <li class="nav-item"><a href="/map_locate/MapSearch.html" >Show Map</a></li> 
+                <li class="nav-item"><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <div id="d1">
+            <div>
+                <h2>UPLOAD IMAGE</h2><br>
+                <input type="file" id="image" onchange="readImage(this)"  accept="image/*" />
+                <div id="d2"><img id="output" /> 
+                    <p>Image</p>
+                </div>
+            </div>
+            
+            <div>
+                <h2>CLASSIFICATION RESULT</h2><br>
+                <button id="b1" onclick="process_image()">CLASSIFY</button>
+                <div id="d2">
+                    <br>
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+header{
+    /* background-color:rgb(221, 161, 245); */
+    background:linear-gradient(rgba(0, 108, 248, 0.644),rgba(185, 100, 241, 0.603));
+}
+
+.navbar a{
+    color:whitesmoke;
+    font-size:medium;
+}
+
+body{
+    /* background-color: rgb(193, 159, 238); */
+    background-color: rgba(190, 245, 227, 0.678);
+    font-size:medium;
+}
+
+#d1{
+    width: 90%;
+    height:auto;
+    background-color: rgba(166, 166, 245, 0.788);
+    display: flex;
+}
+
+h2{
+    color:white
+}
+
+#divContainer{
+    display: flex;
+    width:100%;
+    background-color: rgba(20, 3, 43, 0.219);
+}
+
+div{
+    background-color: rgba(85, 17, 245, 0.411);
+    padding:3%;
+    margin:5%;
+    width:40%;
+    height:50%;
+    text-align: center;
+    border-radius: 3%;
+    min-height:100px;
+}
+
+input{
+    color:rgba(30, 65, 78, 0.911);
+    font-size: larger;
+    cursor: pointer;
+    width:90%;
+}
+
+#d2{
+    width:80%;
+    color:azure;
+}
+
+img{
+    width:100%;
+    border-radius: 5%;
+}
+
+button{
+    background-color: rgb(253, 173, 173);
+    border-radius: 5px;
+    border-color: rgb(250, 217, 215);
+    color:rgb(125, 68, 158);
+    padding:3% 5%;
+}
+
+button:hover{
+    background-color: rgb(161, 240, 210);
+}
