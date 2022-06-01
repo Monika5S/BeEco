@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>Map Search</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/style.css">
+
+        <!-- Adding references to the Azure Maps Map control JavaScript and CSS files. -->
+        <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css" />
+        <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+        <link rel="stylesheet" href="/map_locate/maps.css">
+
+        <!-- Adding reference to the Azure Maps Services Module JavaScript file. -->
+        <script src="https://atlas.microsoft.com/sdk/javascript/service/2/atlas-service.min.js"></script>
+        <script src="/map_locate/location.js"></script>
+
+        <script> 
+            // show map
+            // function GetMap(){       
+            //     //map object
+            //     var map = new atlas.Map("myMap", {
+            //         view: 'Auto',
+            //         //Azure Maps primary subscription key
+            //         authOptions: {
+            //             authType: 'subscriptionKey',
+            //             subscriptionKey: 'hdq8J5GnXLybAwib95YgXYMqM_PTABPw6B23B8BDvEw'
+            //         }
+            //     });
+            //     map.events.add('ready', function(){
+            //         datasource = new atlas.source.DataSource();
+            //         map.sources.add(datasource);
+
+            //         //location points
+            //         var resultLayer = new atlas.layer.SymbolLayer(datasource, null, {
+            //             iconOptions: {
+            //                 image: 'pin-round-darkblue',
+            //                 anchor: 'center',
+            //                 allowOverlap: true
+            //             },
+            //             textOptions: {
+            //                 anchor: "top"
+            //             }
+            //         });
+
+            //         map.layers.add(resultLayer);  //to show result layer on map layer
+
+            //         //MapControlCredential is used to share authentication between a map control and the service module.
+            //         var pipeline = atlas.service.MapsURL.newPipeline(new atlas.service.MapControlCredential(map));
+
+            //         //SearchURL object is used to get recycling points in an area
+            //         var searchURL = new atlas.service.SearchURL(pipeline);
+
+            //         var query ='recycling';
+            //         var radius = 90000;
+                    
+            //         const lat =29.238478;	//28.644800   //currently set to haryana
+            //         const lon =76.431885;  //77.216721	  
+
+            //         //search query
+            //         searchURL.searchPOI(atlas.service.Aborter.timeout(10000), query, {
+            //             limit: 10,
+            //             lat: lat,
+            //             lon: lon,
+            //             radius: radius,
+            //             view: 'Auto'
+            //         }).then((results) => {
+            //             // Extracting GeoJSON feature collection from the response and add it to the datasource
+            //             var data = results.geojson.getFeatures();
+            //             datasource.add(data);
+
+            //             //setting camera bounds to show the results
+            //             map.setCamera({
+            //                 bounds: data.bbox,
+            //                 zoom: 10,
+            //                 padding: 15
+            //             });
+            //         });
+
+            //         //Creating a popup 
+            //         popup = new atlas.Popup();
+
+            //         //displaying a popup
+            //         map.events.add('mouseover', resultLayer, showPopup);
+
+            //         function showPopup(e) {
+            //             var p = e.shapes[0].getProperties();
+            //             var position = e.shapes[0].getCoordinates();
+            //             //Creating popup from properties of the selected result.
+            //             var html = `<div style="padding:5px">
+            //                 <div><b>${p.poi.name}</b></div>
+            //                 <div>${p.address.freeformAddress}</div>
+            //                 <div>${position[1]}, ${position[0]}</div> 
+            //                 </div>`;
+
+            //             popup.setPopupOptions({
+            //                 content: html,
+            //                 position: position
+            //             });
+
+            //             popup.open(map);
+            //         }
+            //     });
+            // }
+        </script>
+
+        <style>
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            #myMap {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+         
+    <header>
+        <nav class="navbar">
+              <ul class="nav-items">
+                <li class="nav-item"><a href="/index.html" >Home</a></li>
+                <li class="nav-item"><a href="/custom_vision/results.html" >Classify Waste</a></li>
+                <li class="nav-item"><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body >  
+        <!-- onload="GetMap()" -->
+        <div id="myMap"></div>
+    </body>
+ </html>
