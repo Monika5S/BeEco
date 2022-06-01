@@ -2,7 +2,7 @@ function process_image(){
     ans=localStorage.getItem('prediction')
     if(ans==null)
     {
-        $('#d2 h3').text('Image Not Found!');
+        $('#d2 h3').text('Click Again');
         return
     }
     ans=JSON.parse(ans)
