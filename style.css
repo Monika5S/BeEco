@@ -234,12 +234,10 @@ h1,h2,h3{
 
 .company-address i{
     display: inline-block;
-    color:#ebebeb;
     margin-right: 1rem;
 }
 
 .company-address h2{
-    color:#ebebeb;
     display: inline-block;
 }
 
