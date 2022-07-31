@@ -1,4 +1,4 @@
-window.addEventListener('load', function () {  //function to get users location
+window.addEventListener('load', function () {  
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(success);
   } else { 
@@ -9,7 +9,6 @@ window.addEventListener('load', function () {  //function to get users location
 function success(position) {
   lat=parseFloat(position.coords.latitude);
   longt=parseFloat(position.coords.longitude);
-  // alert(lat+" "+longt);
   GetMap(lat,longt);
 }
 
@@ -52,9 +51,6 @@ function GetMap(latitude,longitude){
         var query ='recycling';
         var radius = 90000;
         
-        // const lat =29.238478;	//28.644800   //set to haryana
-        // const lon =76.431885;  //77.216721	  
-
         //search query
         searchURL.searchPOI(atlas.service.Aborter.timeout(10000), query, {
             limit: 10,
@@ -100,13 +96,3 @@ function GetMap(latitude,longitude){
         }
     });
 }
-
-
-
-// function getLocation() {
-//   if (navigator.geolocation) {
-//     navigator.geolocation.getCurrentPosition(showPosition);
-//   } else { 
-//     alert("Geolocation is not supported by this browser.");
-//   }
-// }
