@@ -1,5 +1,7 @@
 <h1>BeEco</h1>
 
+https://user-images.githubusercontent.com/92215187/193055074-96a8cf92-7021-49a1-a542-45f2cb690ea2.mp4
+
 <h3>“BeEco” is a software based on the idea of preventing the waste of potentially useful recyclable
 materials by helping to keep them out of landfills and incinerators. It is a web-based platform
 which helps users to identify recyclable waste and they can find the recycling points.</h3>
@@ -21,3 +23,6 @@ ecosystem and prevent the destruction of the environment.</h3>
 <h3>Our idea is to provide solution to the communities to reduce the amount of waste they dispose of
 and increase awareness of the impact they have on the environment. Our aim is to create a
 system where an individual can find recyclable items and send it to the nearest recycle point.</h3>
+
+
+
